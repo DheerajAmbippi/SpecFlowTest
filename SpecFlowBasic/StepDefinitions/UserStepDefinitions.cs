@@ -14,6 +14,17 @@ namespace SpecFlowBasic.StepDefinitions
             var person = new Fixture().Build<User>().With(x => x.Email, "dhee@example.co.in").Create();
             Console.WriteLine($"Name : {person.Name} | Email : {person.Email} | Address : {person.Address} | Phone : {person.Phone}");
         }
+
+        
+
+        [Given(@"I input dynamic domain at (.* email)")]
+        public void GivenIInputDynamicDomainDheerajExample_Co_InEmail(string email)
+        {
+            Console.WriteLine($"Email: {email}");
+        }
+
+
+
     }
 
 
